@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data is Submitted Successfully!</h1>
+    
+    {% if pos %}
+    <!-- ginger tags are used to get info from html page
+    here we have passed name from the function which can be fetched here -->
+    <h3>Your estimated salary for position {{pos}} is {{prediction}} Rupees</h3>
+    {% endif %}
+</body>
+</html>
