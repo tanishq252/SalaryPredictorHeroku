@@ -6,9 +6,9 @@ from model import model
 app = Flask(__name__)
 
 # defining routes in order to direct to various pages as per the values in parantheses
-@app.route("/")
-def hello():
-    return "First Page"
+# @app.route("/")
+# def hello():
+#     return "First Page"
 
 # make sure you have different function names to check the working of app
 @app.route("/hey")
@@ -16,7 +16,7 @@ def he():
     return "hey"
 
 # as we have to display stuff properly we use render templates where we will show desired things using html and css
-@app.route("/html")
+@app.route("/")
 def webage():
     return render_template("index.html")
 
